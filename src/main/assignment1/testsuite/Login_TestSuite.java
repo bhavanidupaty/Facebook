@@ -38,6 +38,14 @@ public class Login_TestSuite {
         loginPage.verifyFacebookLoginPage();
     }
 
+/*
+1. On Facebook login page, enter username
+2. Enter password
+3. Click on login button
+4. Verify the homepage after user login successful
+5. Type a message on What's on your mind and post
+6. get the posted message and print
+*/
     @Test(description = "Login to Facebook with valid user credentials and post a status message")
     public void loginToFacebook() throws Exception {
         loginPage.enterUsername(testData.getData("userName"));
